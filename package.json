@@ -1,0 +1,31 @@
+{
+  "name": "@mousepox/tiled",
+  "version": "0.1.0",
+  "description": "Tiled map edtior helpers and TypeScript definitions.",
+  "keywords": [
+    "tiled",
+    "typescript"
+  ],
+  "author": "Geoff Blair <geoff@mousepox.io>",
+  "license": "ISC",
+  "repository": "github:geoffb/mousepox-tiled",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json 'lib/**/*.ts'",
+    "prepublish": "yarn lint && yarn build",
+    "test": "tape 'tests/**/*.js'"
+  },
+  "devDependencies": {
+    "tape": "^4.11.0",
+    "tslint": "^5.19.0",
+    "typescript": "^3.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
