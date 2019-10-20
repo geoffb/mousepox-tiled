@@ -1,7 +1,7 @@
 /** These types and interfaces map to Tiled's JSON format */
 
 /** Tiled custom property types */
-export type TiledCustomPropertyType = "color" | "bool" | "string";
+export type TiledCustomPropertyType = "color" | "bool" | "int" | "string";
 
 /** Tiled layer types */
 export type TiledLayerType = "tilelayer" | "objectgroup";
@@ -62,4 +62,5 @@ export interface ITiledObject {
   rotation: number;
   visible: boolean;
   gid?: number;
+  properties?: ITiledCustomProperty[];
 }
