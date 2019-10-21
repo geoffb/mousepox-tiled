@@ -1,6 +1,6 @@
 {
   "name": "@mousepox/tiled",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tiled map editor helpers and TypeScript definitions.",
   "keywords": [
     "tiled",
