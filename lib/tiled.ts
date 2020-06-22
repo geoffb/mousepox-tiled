@@ -1,4 +1,7 @@
-/** These types and interfaces map to Tiled's JSON format */
+/**
+ * Tiled JSON format TypeScript declarations
+ * @see https://www.mapeditor.org
+ */
 
 /** Tiled custom property types */
 export type TiledCustomPropertyType = "color" | "bool" | "int" | "string";
@@ -63,4 +66,17 @@ export interface ITiledObject {
   visible: boolean;
   gid?: number;
   properties?: ITiledCustomProperty[];
+}
+
+/** Tiled tileset tile */
+export interface ITiledTilesetTile {
+  id: number;
+  image: string;
+  imagewidth: number;
+  imageheight: number;
+}
+
+/** Tiled tileset */
+export interface ITiledTileset {
+  tiles: ITiledTilesetTile[];
 }
